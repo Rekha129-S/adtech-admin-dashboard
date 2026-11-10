@@ -4,7 +4,8 @@
   "description": "AdTech Platform - admin and client portals with Node.js backend",
   "main": "server.js",
   "scripts": {
-    "build": "echo Build completed",
+    "dev": "node server.js",
+    "build": "echo \"Build completed\"",
     "start": "node server.js"
   },
   "engines": {
