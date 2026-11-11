@@ -253,13 +253,13 @@
     {
       "id": 4,
       "dev": "DEV-004",
-      "lat": 12.913568862287214,
-      "lng": 77.63929549583816,
-      "speed": 22,
+      "lat": 12.913186119561146,
+      "lng": 77.63982931526303,
+      "speed": 12,
       "status": "Online",
       "created": "2026-10-01T08:53:57.017Z",
       "vehicle": "KA-01-DD-4004",
-      "lastSeenAt": "2026-11-11T11:25:54.773Z"
+      "lastSeenAt": "2026-11-11T16:57:49.084Z"
     },
     {
       "id": 5,
@@ -275,57 +275,57 @@
     {
       "id": 6,
       "dev": "DEV-006",
-      "lat": 12.967359082035385,
-      "lng": 77.74896591631189,
-      "speed": 20,
+      "lat": 12.966929113997294,
+      "lng": 77.74934469308155,
+      "speed": 33,
       "status": "Online",
       "created": "2026-10-05T08:53:57.017Z",
       "vehicle": "KA-01-FF-6006",
-      "lastSeenAt": "2026-11-11T11:25:54.773Z"
+      "lastSeenAt": "2026-11-11T16:57:49.084Z"
     },
     {
       "id": 7,
       "dev": "DEV-007",
-      "lat": 12.931276330100225,
-      "lng": 77.58513892039649,
-      "speed": 21,
+      "lat": 12.933344818055684,
+      "lng": 77.58399066342017,
+      "speed": 23,
       "status": "Online",
       "created": "2026-10-07T08:53:57.017Z",
       "vehicle": "KA-01-GG-7007",
-      "lastSeenAt": "2026-11-11T11:25:54.773Z"
+      "lastSeenAt": "2026-11-11T16:57:49.084Z"
     },
     {
       "id": 8,
       "dev": "DEV-008",
-      "lat": 12.846165943539539,
-      "lng": 77.65638806454413,
-      "speed": 19,
+      "lat": 12.845449898231285,
+      "lng": 77.65768892724677,
+      "speed": 28,
       "status": "Online",
       "created": "2026-10-09T08:53:57.017Z",
       "vehicle": "KA-01-HH-8008",
-      "lastSeenAt": "2026-11-11T11:25:54.773Z"
+      "lastSeenAt": "2026-11-11T16:57:49.084Z"
     },
     {
       "id": 1,
       "dev": "DEV-001",
-      "lat": 12.90648090809058,
-      "lng": 77.62247295986745,
-      "speed": 13,
+      "lat": 12.906720215276776,
+      "lng": 77.62187127119832,
+      "speed": 28,
       "status": "Online",
       "created": "2026-09-25T08:53:57.017Z",
       "vehicle": "KA-01-AA-1001",
-      "lastSeenAt": "2026-11-11T11:25:54.773Z"
+      "lastSeenAt": "2026-11-11T16:57:49.084Z"
     },
     {
       "id": 2,
       "dev": "DEV-002",
-      "lat": 12.917122361428731,
-      "lng": 77.6237686218262,
-      "speed": 26,
+      "lat": 12.916469607211553,
+      "lng": 77.62186765110833,
+      "speed": 34,
       "status": "Online",
       "created": "2026-09-27T08:53:57.017Z",
       "vehicle": "KA-01-BB-2002",
-      "lastSeenAt": "2026-11-11T11:25:54.773Z"
+      "lastSeenAt": "2026-11-11T16:57:49.084Z"
     }
   ],
   "campaigns": [
@@ -437,6 +437,56 @@
   ],
   "billing": [
     {
+      "id": 4,
+      "adv": "Platform",
+      "date": "2026-10-20",
+      "desc": "Device fees",
+      "type": "Transactions",
+      "amount": 50000,
+      "status": "Paid",
+      "created": "2026-10-01T08:53:57.017Z"
+    },
+    {
+      "id": 5,
+      "adv": "Platform",
+      "date": "2026-10-18",
+      "desc": "Partner commission",
+      "type": "Payouts",
+      "amount": 40000,
+      "status": "Paid",
+      "created": "2026-10-03T08:53:57.017Z"
+    },
+    {
+      "id": 6,
+      "adv": "Mega Media",
+      "date": "2026-10-05",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 180000,
+      "status": "Paid",
+      "created": "2026-10-05T08:53:57.017Z"
+    },
+    {
+      "id": 7,
+      "adv": "Future Brands",
+      "date": "2026-09-12",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 160000,
+      "status": "Paid",
+      "created": "2026-10-07T08:53:57.017Z"
+    },
+    {
+      "id": 8,
+      "adv": "ABC Enterprises",
+      "date": "2026-09-02",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 140000,
+      "status": "Paid",
+      "created": "2026-10-09T08:53:57.017Z"
+    },
+    {
       "id": 9,
       "adv": "TechGlobal Ltd",
       "date": "2026-08-15",
@@ -505,56 +555,6 @@
       "amount": 200000,
       "status": "Pending",
       "created": "2026-09-29T08:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "adv": "Platform",
-      "date": "2026-10-20",
-      "desc": "Device fees",
-      "type": "Transactions",
-      "amount": 50000,
-      "status": "Paid",
-      "created": "2026-10-01T08:53:57.017Z"
-    },
-    {
-      "id": 5,
-      "adv": "Platform",
-      "date": "2026-10-18",
-      "desc": "Partner commission",
-      "type": "Payouts",
-      "amount": 40000,
-      "status": "Paid",
-      "created": "2026-10-03T08:53:57.017Z"
-    },
-    {
-      "id": 6,
-      "adv": "Mega Media",
-      "date": "2026-10-05",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 180000,
-      "status": "Paid",
-      "created": "2026-10-05T08:53:57.017Z"
-    },
-    {
-      "id": 7,
-      "adv": "Future Brands",
-      "date": "2026-09-12",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 160000,
-      "status": "Paid",
-      "created": "2026-10-07T08:53:57.017Z"
-    },
-    {
-      "id": 8,
-      "adv": "ABC Enterprises",
-      "date": "2026-09-02",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 140000,
-      "status": "Paid",
-      "created": "2026-10-09T08:53:57.017Z"
     }
   ],
   "support": [
