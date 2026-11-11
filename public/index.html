@@ -1,78 +1,271 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AdTech Platform</title>
-<script>try{var t=localStorage.getItem("adtech-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme="light"}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="AdTech Platform - Admin Dashboard">
+
+  <title>AdTech Platform</title>
+
+  <!-- Theme initialization -->
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("adtech-theme");
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+
+      document.documentElement.dataset.theme = savedTheme || systemTheme;
+    } catch (error) {
+      document.documentElement.dataset.theme = "light";
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Leaflet Map CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+  >
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- Landing: both sign-in forms are visible straight away -->
-<section id="landing">
-  <nav class="ln">
-    <div class="logo"><i>▶</i><span>AdTech Platform</span></div>
-    <button class="ib" id="theme0" data-ic="moon" aria-label="Toggle theme"></button>
-  </nav>
+  <!-- Landing Page: Admin Sign In -->
+  <section id="landing">
 
-  <main class="lmain">
-    <div class="lintro">
-      <span class="pill">Out-of-home advertising · Bengaluru</span>
-      <h1>Admin sign in</h1>
-      <p>Sign in to manage operations, campaigns, billing, live monitoring and clients.</p>
-    </div>
-
-    <div class="lcards">
-      <form class="lc" data-portal="admin" novalidate>
-        <span class="ri" data-ic="shield"></span>
-        <h2>Welcome back</h2>
-        <p>Use your admin credentials to continue.</p>
-        <label for="em-admin">Email address</label><input id="em-admin" name="email" type="email" autocomplete="username" value="admin@adtech.in" required>
-        <label for="pw-admin">Password</label><input id="pw-admin" name="password" type="password" autocomplete="current-password" value="Admin@123" required>
-        <div class="merr" role="alert"></div>
-        <button class="btn">Sign in as Admin</button>
-      </form>
-    </div>
-    <small class="lnote">Demo credentials are pre-filled.</small>
-
-    <ul class="trust"><li data-ic="check">Live GPS tracking</li><li data-ic="check">Role-based access</li><li data-ic="check">Full audit trail</li></ul>
-  </main>
-
-  <footer class="lfoot"><span>© AdTech Platform</span><span>Secure sign-in · Activity is logged</span></footer>
-</section>
-
-<div id="app">
-  <aside id="side"></aside>
-  <main>
-    <div id="impbar" role="status"></div>
-    <header>
-      <div class="hl">
-        <button class="ib" id="menu" data-ic="menu" aria-label="Open menu"></button>
-        <button class="ib" id="collapse" data-ic="chev" aria-label="Collapse sidebar"></button>
-        <div><h2 id="title"></h2><small id="crumb"></small></div>
+    <nav class="ln">
+      <div class="logo">
+        <i>▶</i>
+        <span>AdTech Platform</span>
       </div>
-      <div class="hr">
-        <button class="btn ghost" id="cview" style="display:none"></button>
-        <button class="ib" id="theme" data-ic="moon" aria-label="Toggle theme"></button>
-        <button class="ib" id="bell" data-ic="bell" aria-label="Notifications"><span class="dot" id="bd"></span></button>
-        <div class="user"><div class="av" id="uav">SA</div><div class="ut"><b id="un"></b><small id="ue"></small></div></div>
-      </div>
-    </header>
-    <div id="view"></div>
-  </main>
-</div>
 
-<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Details"></div>
-<div class="dback" id="dback"></div>
-<div class="toast" id="toast" role="status"></div>
-<div class="modal-bg" id="mbg"><div class="modal" id="modal" role="dialog" aria-modal="true"></div></div>
-<div class="back" id="back"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-<script src="app.js"></script>
+      <button
+        type="button"
+        class="ib"
+        id="theme0"
+        data-ic="moon"
+        aria-label="Toggle theme"
+      ></button>
+    </nav>
+
+    <main class="lmain">
+
+      <div class="lintro">
+        <span class="pill">
+          Out-of-home advertising · Bengaluru
+        </span>
+
+        <h1>Admin sign in</h1>
+
+        <p>
+          Sign in to manage operations, campaigns, billing,
+          live monitoring and clients.
+        </p>
+      </div>
+
+      <div class="lcards">
+
+        <!-- Admin Login Form -->
+        <form class="lc" data-portal="admin" novalidate>
+
+          <span class="ri" data-ic="shield"></span>
+
+          <h2>Welcome back</h2>
+
+          <p>Use your admin credentials to continue.</p>
+
+          <label for="em-admin">Email address</label>
+
+          <input
+            id="em-admin"
+            name="email"
+            type="email"
+            autocomplete="username"
+            value="admin@adtech.in"
+            required
+          >
+
+          <label for="pw-admin">Password</label>
+
+          <input
+            id="pw-admin"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            value="Admin@123"
+            required
+          >
+
+          <div class="merr" role="alert" aria-live="polite"></div>
+
+          <button type="submit" class="btn">
+            Sign in as Admin
+          </button>
+
+        </form>
+
+      </div>
+
+      <small class="lnote">
+        Demo credentials are pre-filled.
+      </small>
+
+      <ul class="trust">
+        <li data-ic="check">Live GPS tracking</li>
+        <li data-ic="check">Role-based access</li>
+        <li data-ic="check">Full audit trail</li>
+      </ul>
+
+    </main>
+
+    <footer class="lfoot">
+      <span>© AdTech Platform</span>
+      <span>Secure sign-in · Activity is logged</span>
+    </footer>
+
+  </section>
+
+  <!-- Main Application -->
+  <div id="app">
+
+    <!-- Sidebar -->
+    <aside id="side"></aside>
+
+    <main>
+
+      <div id="impbar" role="status"></div>
+
+      <!-- Header -->
+      <header>
+
+        <div class="hl">
+
+          <button
+            type="button"
+            class="ib"
+            id="menu"
+            data-ic="menu"
+            aria-label="Open menu"
+          ></button>
+
+          <button
+            type="button"
+            class="ib"
+            id="collapse"
+            data-ic="chev"
+            aria-label="Collapse sidebar"
+          ></button>
+
+          <div>
+            <h2 id="title"></h2>
+            <small id="crumb"></small>
+          </div>
+
+        </div>
+
+        <div class="hr">
+
+          <button
+            type="button"
+            class="btn ghost"
+            id="cview"
+            style="display:none"
+          ></button>
+
+          <button
+            type="button"
+            class="ib"
+            id="theme"
+            data-ic="moon"
+            aria-label="Toggle theme"
+          ></button>
+
+          <button
+            type="button"
+            class="ib"
+            id="bell"
+            data-ic="bell"
+            aria-label="Notifications"
+          >
+            <span class="dot" id="bd"></span>
+          </button>
+
+          <div class="user">
+
+            <div class="av" id="uav">SA</div>
+
+            <div class="ut">
+              <b id="un"></b>
+              <small id="ue"></small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </header>
+
+      <!-- Dynamic Dashboard Content -->
+      <div id="view"></div>
+
+    </main>
+
+  </div>
+
+  <!-- Details Drawer -->
+  <div
+    class="drawer"
+    id="drawer"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Details"
+  ></div>
+
+  <div class="dback" id="dback"></div>
+
+  <!-- Toast Notification -->
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <!-- Modal -->
+  <div class="modal-bg" id="mbg">
+
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+    ></div>
+
+  </div>
+
+  <!-- Background Overlay -->
+  <div class="back" id="back"></div>
+
+  <!-- Leaflet Map JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+
+  <!-- Main Application JavaScript -->
+  <script src="app.js"></script>
+
 </body>
 </html>

@@ -48,6 +48,26 @@
   ],
   "advertisers": [
     {
+      "id": 2,
+      "pw": "e35e680a5602c5dd50d8f00f06f9348e:510520596d499d4b7c52ee150caeca4ee9634575f0b60515d0f854f7393bde9d",
+      "name": "TechGlobal Ltd",
+      "email": "ads@techglobal.com",
+      "status": "Approved",
+      "created": "2026-09-27T08:53:57.017Z",
+      "lastLogin": "2026-11-03T07:53:57.017Z",
+      "loginCount": 1
+    },
+    {
+      "id": 3,
+      "pw": "9639ee0f4264159b5252551bf6f7627e:a4f79bc7b04e88ac72709a334a47cfd31c1f37e1a4c162aa3580440aa996a17e",
+      "name": "Dream Ads Co.",
+      "email": "ads@dreamads.com",
+      "status": "Pending",
+      "created": "2026-09-29T08:53:57.017Z",
+      "lastLogin": null,
+      "loginCount": 0
+    },
+    {
       "id": 4,
       "pw": "a77c3c412311423bb696b95574e73e12:edbbd199087d7e61a28cd0daa4a12a263fe8530d5d8f3729c0ab7b00a20e3f2d",
       "name": "Future Brands",
@@ -84,29 +104,25 @@
       "created": "2026-09-25T08:53:57.017Z",
       "lastLogin": "2026-11-04T03:53:57.017Z",
       "loginCount": 2
-    },
-    {
-      "id": 2,
-      "pw": "e35e680a5602c5dd50d8f00f06f9348e:510520596d499d4b7c52ee150caeca4ee9634575f0b60515d0f854f7393bde9d",
-      "name": "TechGlobal Ltd",
-      "email": "ads@techglobal.com",
-      "status": "Approved",
-      "created": "2026-09-27T08:53:57.017Z",
-      "lastLogin": "2026-11-03T07:53:57.017Z",
-      "loginCount": 1
-    },
-    {
-      "id": 3,
-      "pw": "9639ee0f4264159b5252551bf6f7627e:a4f79bc7b04e88ac72709a334a47cfd31c1f37e1a4c162aa3580440aa996a17e",
-      "name": "Dream Ads Co.",
-      "email": "ads@dreamads.com",
-      "status": "Pending",
-      "created": "2026-09-29T08:53:57.017Z",
-      "lastLogin": null,
-      "loginCount": 0
     }
   ],
   "partners": [
+    {
+      "id": 7,
+      "name": "Divya Nair",
+      "phone": "9901234567",
+      "status": "Active",
+      "created": "2026-10-07T08:53:57.017Z",
+      "vehicle": "KA-01-GG-7007"
+    },
+    {
+      "id": 8,
+      "name": "Kiran Reddy",
+      "phone": "9886543210",
+      "status": "Active",
+      "created": "2026-10-09T08:53:57.017Z",
+      "vehicle": "KA-01-HH-8008"
+    },
     {
       "id": 1,
       "name": "Ramesh Kumar",
@@ -154,25 +170,25 @@
       "status": "Active",
       "created": "2026-10-05T08:53:57.017Z",
       "vehicle": "KA-01-FF-6006"
-    },
-    {
-      "id": 7,
-      "name": "Divya Nair",
-      "phone": "9901234567",
-      "status": "Active",
-      "created": "2026-10-07T08:53:57.017Z",
-      "vehicle": "KA-01-GG-7007"
-    },
-    {
-      "id": 8,
-      "name": "Kiran Reddy",
-      "phone": "9886543210",
-      "status": "Active",
-      "created": "2026-10-09T08:53:57.017Z",
-      "vehicle": "KA-01-HH-8008"
     }
   ],
   "vehicles": [
+    {
+      "id": 7,
+      "no": "KA-01-GG-7007",
+      "area": "Jayanagar",
+      "owner": "Divya Nair",
+      "status": "Active",
+      "created": "2026-10-07T08:53:57.017Z"
+    },
+    {
+      "id": 8,
+      "no": "KA-01-HH-8008",
+      "area": "Electronic City",
+      "owner": "Kiran Reddy",
+      "status": "Active",
+      "created": "2026-10-09T08:53:57.017Z"
+    },
     {
       "id": 1,
       "no": "KA-01-AA-1001",
@@ -220,47 +236,9 @@
       "owner": "Anil Shetty",
       "status": "Active",
       "created": "2026-10-05T08:53:57.017Z"
-    },
-    {
-      "id": 7,
-      "no": "KA-01-GG-7007",
-      "area": "Jayanagar",
-      "owner": "Divya Nair",
-      "status": "Active",
-      "created": "2026-10-07T08:53:57.017Z"
-    },
-    {
-      "id": 8,
-      "no": "KA-01-HH-8008",
-      "area": "Electronic City",
-      "owner": "Kiran Reddy",
-      "status": "Active",
-      "created": "2026-10-09T08:53:57.017Z"
     }
   ],
   "devices": [
-    {
-      "id": 3,
-      "dev": "DEV-003",
-      "lat": 12.938225506655423,
-      "lng": 77.62690305980257,
-      "speed": 0,
-      "status": "Offline",
-      "created": "2026-09-29T08:53:57.017Z",
-      "vehicle": "KA-01-CC-3003",
-      "lastSeenAt": "2026-11-04T07:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "dev": "DEV-004",
-      "lat": 12.914898044717198,
-      "lng": 77.63891067582351,
-      "speed": 23,
-      "status": "Online",
-      "created": "2026-10-01T08:53:57.017Z",
-      "vehicle": "KA-01-DD-4004",
-      "lastSeenAt": "2026-11-10T16:54:05.945Z"
-    },
     {
       "id": 5,
       "dev": "DEV-005",
@@ -275,60 +253,91 @@
     {
       "id": 6,
       "dev": "DEV-006",
-      "lat": 12.970710967776085,
-      "lng": 77.7518509667973,
-      "speed": 29,
+      "lat": 12.968163518139766,
+      "lng": 77.74899383235035,
+      "speed": 17,
       "status": "Online",
       "created": "2026-10-05T08:53:57.017Z",
       "vehicle": "KA-01-FF-6006",
-      "lastSeenAt": "2026-11-10T16:54:05.945Z"
+      "lastSeenAt": "2026-11-11T04:34:01.830Z"
     },
     {
       "id": 7,
       "dev": "DEV-007",
-      "lat": 12.930565748770883,
-      "lng": 77.58442142763185,
-      "speed": 12,
+      "lat": 12.930845720725632,
+      "lng": 77.58569743963172,
+      "speed": 14,
       "status": "Online",
       "created": "2026-10-07T08:53:57.017Z",
       "vehicle": "KA-01-GG-7007",
-      "lastSeenAt": "2026-11-10T16:54:05.945Z"
+      "lastSeenAt": "2026-11-11T04:34:01.830Z"
     },
     {
       "id": 8,
       "dev": "DEV-008",
-      "lat": 12.844706378926263,
-      "lng": 77.66200546452767,
-      "speed": 23,
+      "lat": 12.844368312875908,
+      "lng": 77.65935244168257,
+      "speed": 22,
       "status": "Online",
       "created": "2026-10-09T08:53:57.017Z",
       "vehicle": "KA-01-HH-8008",
-      "lastSeenAt": "2026-11-10T16:54:05.945Z"
+      "lastSeenAt": "2026-11-11T04:34:01.830Z"
     },
     {
       "id": 1,
       "dev": "DEV-001",
-      "lat": 12.907401669765232,
-      "lng": 77.62354232797674,
-      "speed": 24,
+      "lat": 12.908523382297371,
+      "lng": 77.62260621120143,
+      "speed": 23,
       "status": "Online",
       "created": "2026-09-25T08:53:57.017Z",
       "vehicle": "KA-01-AA-1001",
-      "lastSeenAt": "2026-11-10T16:54:05.945Z"
+      "lastSeenAt": "2026-11-11T04:34:01.830Z"
     },
     {
       "id": 2,
       "dev": "DEV-002",
-      "lat": 12.915302718517117,
-      "lng": 77.62197953345853,
-      "speed": 12,
+      "lat": 12.915830660447904,
+      "lng": 77.62295743766487,
+      "speed": 14,
       "status": "Online",
       "created": "2026-09-27T08:53:57.017Z",
       "vehicle": "KA-01-BB-2002",
-      "lastSeenAt": "2026-11-10T16:54:05.945Z"
+      "lastSeenAt": "2026-11-11T04:34:01.830Z"
+    },
+    {
+      "id": 3,
+      "dev": "DEV-003",
+      "lat": 12.938225506655423,
+      "lng": 77.62690305980257,
+      "speed": 0,
+      "status": "Offline",
+      "created": "2026-09-29T08:53:57.017Z",
+      "vehicle": "KA-01-CC-3003",
+      "lastSeenAt": "2026-11-04T07:53:57.017Z"
+    },
+    {
+      "id": 4,
+      "dev": "DEV-004",
+      "lat": 12.911604360273229,
+      "lng": 77.63856774821134,
+      "speed": 34,
+      "status": "Online",
+      "created": "2026-10-01T08:53:57.017Z",
+      "vehicle": "KA-01-DD-4004",
+      "lastSeenAt": "2026-11-11T04:34:01.830Z"
     }
   ],
   "campaigns": [
+    {
+      "id": 6,
+      "adv": "ABC Enterprises",
+      "end": "2027-01-10",
+      "name": "New Year Launch",
+      "start": "2026-12-20",
+      "status": "Pending",
+      "created": "2026-10-05T08:53:57.017Z"
+    },
     {
       "id": 7,
       "adv": "SR Enterprices",
@@ -382,15 +391,6 @@
       "start": "2026-11-20",
       "status": "Approved",
       "created": "2026-10-03T08:53:57.017Z"
-    },
-    {
-      "id": 6,
-      "adv": "ABC Enterprises",
-      "end": "2027-01-10",
-      "name": "New Year Launch",
-      "start": "2026-12-20",
-      "status": "Pending",
-      "created": "2026-10-05T08:53:57.017Z"
     }
   ],
   "inventory": [
@@ -436,26 +436,6 @@
     }
   ],
   "billing": [
-    {
-      "id": 8,
-      "adv": "ABC Enterprises",
-      "date": "2026-09-02",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 140000,
-      "status": "Paid",
-      "created": "2026-10-09T08:53:57.017Z"
-    },
-    {
-      "id": 9,
-      "adv": "TechGlobal Ltd",
-      "date": "2026-08-15",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 120000,
-      "status": "Paid",
-      "created": "2026-10-11T08:53:57.017Z"
-    },
     {
       "id": 10,
       "adv": "Dream Ads Co.",
@@ -555,6 +535,26 @@
       "amount": 160000,
       "status": "Paid",
       "created": "2026-10-07T08:53:57.017Z"
+    },
+    {
+      "id": 8,
+      "adv": "ABC Enterprises",
+      "date": "2026-09-02",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 140000,
+      "status": "Paid",
+      "created": "2026-10-09T08:53:57.017Z"
+    },
+    {
+      "id": 9,
+      "adv": "TechGlobal Ltd",
+      "date": "2026-08-15",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 120000,
+      "status": "Paid",
+      "created": "2026-10-11T08:53:57.017Z"
     }
   ],
   "support": [
@@ -601,6 +601,34 @@
   ],
   "audit": [
     {
+      "at": "2026-11-04T09:01:32.691Z",
+      "id": 7,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "campaigns: created \"Diwali Launch\""
+    },
+    {
+      "at": "2026-11-04T08:58:55.084Z",
+      "id": 6,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "advertisers: created \"SR Enterprices\""
+    },
+    {
+      "at": "2026-11-04T08:56:36.255Z",
+      "id": 5,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "campaigns: updated \"Tech Sale\""
+    },
+    {
+      "at": "2026-11-04T08:56:27.822Z",
+      "id": 4,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "Signed in (admin)"
+    },
+    {
       "at": "2026-11-04T08:23:57.017Z",
       "id": 3,
       "ip": "127.0.0.1",
@@ -645,34 +673,6 @@
     {
       "at": "2026-11-04T09:13:11.642Z",
       "id": 8,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "Signed in (admin)"
-    },
-    {
-      "at": "2026-11-04T09:01:32.691Z",
-      "id": 7,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "campaigns: created \"Diwali Launch\""
-    },
-    {
-      "at": "2026-11-04T08:58:55.084Z",
-      "id": 6,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "advertisers: created \"SR Enterprices\""
-    },
-    {
-      "at": "2026-11-04T08:56:36.255Z",
-      "id": 5,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "campaigns: updated \"Tech Sale\""
-    },
-    {
-      "at": "2026-11-04T08:56:27.822Z",
-      "id": 4,
       "ip": "127.0.0.1",
       "user": "Rekha Patil",
       "action": "Signed in (admin)"
