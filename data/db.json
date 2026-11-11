@@ -242,46 +242,46 @@
     {
       "id": 7,
       "dev": "DEV-007",
-      "lat": 12.929732181983113,
-      "lng": 77.58515451062499,
-      "speed": 17,
+      "lat": 12.929246172057832,
+      "lng": 77.5844357404554,
+      "speed": 15,
       "status": "Online",
       "created": "2026-10-07T08:53:57.017Z",
       "vehicle": "KA-01-GG-7007",
-      "lastSeenAt": "2026-11-11T05:10:27.585Z"
+      "lastSeenAt": "2026-11-11T05:48:02.512Z"
     },
     {
       "id": 8,
       "dev": "DEV-008",
-      "lat": 12.846713123628636,
-      "lng": 77.65866983281728,
+      "lat": 12.845835415532793,
+      "lng": 77.65707880965131,
       "speed": 30,
       "status": "Online",
       "created": "2026-10-09T08:53:57.017Z",
       "vehicle": "KA-01-HH-8008",
-      "lastSeenAt": "2026-11-11T05:10:27.585Z"
+      "lastSeenAt": "2026-11-11T05:48:02.512Z"
     },
     {
       "id": 1,
       "dev": "DEV-001",
-      "lat": 12.903964793459918,
-      "lng": 77.62503417034024,
-      "speed": 28,
+      "lat": 12.904825915012621,
+      "lng": 77.62426036995154,
+      "speed": 30,
       "status": "Online",
       "created": "2026-09-25T08:53:57.017Z",
       "vehicle": "KA-01-AA-1001",
-      "lastSeenAt": "2026-11-11T05:10:27.585Z"
+      "lastSeenAt": "2026-11-11T05:48:02.512Z"
     },
     {
       "id": 2,
       "dev": "DEV-002",
-      "lat": 12.91889407803358,
-      "lng": 77.62252003247907,
-      "speed": 20,
+      "lat": 12.919326864568626,
+      "lng": 77.62338194743754,
+      "speed": 27,
       "status": "Online",
       "created": "2026-09-27T08:53:57.017Z",
       "vehicle": "KA-01-BB-2002",
-      "lastSeenAt": "2026-11-11T05:10:27.585Z"
+      "lastSeenAt": "2026-11-11T05:48:02.512Z"
     },
     {
       "id": 3,
@@ -297,13 +297,13 @@
     {
       "id": 4,
       "dev": "DEV-004",
-      "lat": 12.91182741826624,
-      "lng": 77.6414762065569,
-      "speed": 33,
+      "lat": 12.910292892023845,
+      "lng": 77.64079453263948,
+      "speed": 22,
       "status": "Online",
       "created": "2026-10-01T08:53:57.017Z",
       "vehicle": "KA-01-DD-4004",
-      "lastSeenAt": "2026-11-11T05:10:27.585Z"
+      "lastSeenAt": "2026-11-11T05:48:02.512Z"
     },
     {
       "id": 5,
@@ -319,13 +319,13 @@
     {
       "id": 6,
       "dev": "DEV-006",
-      "lat": 12.966620997809061,
-      "lng": 77.74886868112016,
-      "speed": 18,
+      "lat": 12.965869273568082,
+      "lng": 77.74865237673966,
+      "speed": 14,
       "status": "Online",
       "created": "2026-10-05T08:53:57.017Z",
       "vehicle": "KA-01-FF-6006",
-      "lastSeenAt": "2026-11-11T05:10:27.585Z"
+      "lastSeenAt": "2026-11-11T05:48:02.512Z"
     }
   ],
   "campaigns": [
@@ -437,6 +437,56 @@
   ],
   "billing": [
     {
+      "id": 12,
+      "adv": "ABC Enterprises",
+      "date": "2026-05-08",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 80000,
+      "status": "Paid",
+      "created": "2026-10-17T08:53:57.017Z"
+    },
+    {
+      "id": 1,
+      "adv": "ABC Enterprises",
+      "date": "2026-11-01",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 150000,
+      "status": "Paid",
+      "created": "2026-09-25T08:53:57.017Z"
+    },
+    {
+      "id": 2,
+      "adv": "Platform",
+      "date": "2026-10-28",
+      "desc": "Partner payout",
+      "type": "Payouts",
+      "amount": 75000,
+      "status": "Paid",
+      "created": "2026-09-27T08:53:57.017Z"
+    },
+    {
+      "id": 3,
+      "adv": "TechGlobal Ltd",
+      "date": "2026-10-25",
+      "desc": "Campaign payment",
+      "type": "Invoices",
+      "amount": 200000,
+      "status": "Pending",
+      "created": "2026-09-29T08:53:57.017Z"
+    },
+    {
+      "id": 4,
+      "adv": "Platform",
+      "date": "2026-10-20",
+      "desc": "Device fees",
+      "type": "Transactions",
+      "amount": 50000,
+      "status": "Paid",
+      "created": "2026-10-01T08:53:57.017Z"
+    },
+    {
       "id": 5,
       "adv": "Platform",
       "date": "2026-10-18",
@@ -505,56 +555,6 @@
       "amount": 110000,
       "status": "Paid",
       "created": "2026-10-15T08:53:57.017Z"
-    },
-    {
-      "id": 12,
-      "adv": "ABC Enterprises",
-      "date": "2026-05-08",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 80000,
-      "status": "Paid",
-      "created": "2026-10-17T08:53:57.017Z"
-    },
-    {
-      "id": 1,
-      "adv": "ABC Enterprises",
-      "date": "2026-11-01",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 150000,
-      "status": "Paid",
-      "created": "2026-09-25T08:53:57.017Z"
-    },
-    {
-      "id": 2,
-      "adv": "Platform",
-      "date": "2026-10-28",
-      "desc": "Partner payout",
-      "type": "Payouts",
-      "amount": 75000,
-      "status": "Paid",
-      "created": "2026-09-27T08:53:57.017Z"
-    },
-    {
-      "id": 3,
-      "adv": "TechGlobal Ltd",
-      "date": "2026-10-25",
-      "desc": "Campaign payment",
-      "type": "Invoices",
-      "amount": 200000,
-      "status": "Pending",
-      "created": "2026-09-29T08:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "adv": "Platform",
-      "date": "2026-10-20",
-      "desc": "Device fees",
-      "type": "Transactions",
-      "amount": 50000,
-      "status": "Paid",
-      "created": "2026-10-01T08:53:57.017Z"
     }
   ],
   "support": [
