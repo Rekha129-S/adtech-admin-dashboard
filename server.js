@@ -1,24 +1,18 @@
-
 "use strict";
 
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-
 const supabaseStore = require("./config/supabase-store");
 
 const PORT = process.env.PORT || 3000;
 const ROOT = path.join(__dirname, "public");
 const DATA_DIR = path.join(__dirname, "data");
 const DB_FILE = path.join(DATA_DIR, "db.json");
+const DEVICE_KEY = process.env.DEVICE_KEY || "device-secret";
 
-if (!process.env.DEVICE_KEY) {
-  throw new Error("DEVICE_KEY is missing from environment variables");
-}
-
-const DEVICE_KEY = process.env.DEVICE_KEY;
-
+// Database must be declared before the crypto helpers.
 let db;
 let timer;
 
@@ -206,7 +200,7 @@ const sign = p => {
 function unsign(t) {
   const [body, sig] = String(t || "").split(".");
 
-  if (!sig) return null;
+  if (!body || !sig) return null;
 
   const expected = mac(body);
 
@@ -222,7 +216,7 @@ function unsign(t) {
 
   try {
     const p = JSON.parse(
-      Buffer.from(body, "base64url")
+      Buffer.from(body, "base64url").toString("utf8")
     );
 
     return p.exp > Date.now() ? p : null;
@@ -495,17 +489,25 @@ const send = (res, code, obj) => {
 const readBody = req =>
   new Promise((ok, no) => {
     let s = "";
+    let done = false;
 
     req.on("data", c => {
+      if (done) return;
+
       s += c;
 
       if (s.length > 1e5) {
+        done = true;
+        // Stop reading, but keep the socket open so the 413 can be sent.
+        req.pause();
         no(E(413, "Payload too large"));
-        req.destroy();
       }
     });
 
     req.on("end", () => {
+      if (done) return;
+      done = true;
+
       try {
         ok(s ? JSON.parse(s) : {});
       } catch (e) {
@@ -513,7 +515,11 @@ const readBody = req =>
       }
     });
 
-    req.on("error", no);
+    req.on("error", err => {
+      if (done) return;
+      done = true;
+      no(err);
+    });
   });
 
 const ipOf = req =>
@@ -659,7 +665,7 @@ function validate(col, b, existing, au) {
     db[col].some(x =>
       (!existing || x.id !== existing.id) &&
       String(x[sc.uniq]).toLowerCase() ===
-        o[sc.uniq].toLowerCase()
+        String(o[sc.uniq]).toLowerCase()
     )
   ) {
     throw E(409, LBL[sc.uniq] + " already exists");
@@ -1084,6 +1090,10 @@ async function api(req, res, url) {
       db.support.forEach(t => {
         if (t.user === rec.name) t.user = o.name;
       });
+
+      db.logins.forEach(l => {
+        if (l.advId === rec.id) l.name = o.name;
+      });
     }
 
     if (col === "vehicles" && o.no !== rec.no) {
@@ -1266,7 +1276,14 @@ async function startServer() {
   /* ---------- HTTP server ---------- */
 
   const server = http.createServer(async (req, res) => {
-    const url = new URL(req.url, "http://localhost");
+    let url;
+
+    try {
+      url = new URL(req.url, "http://localhost");
+    } catch (e) {
+      res.writeHead(400);
+      return res.end("Bad request");
+    }
 
     if (url.pathname.startsWith("/api/")) {
       try {
@@ -1282,11 +1299,22 @@ async function startServer() {
           });
         }
       }
-
       return;
     }
 
-    let p = decodeURIComponent(url.pathname);
+    let p;
+
+    try {
+      p = decodeURIComponent(url.pathname);
+    } catch (e) {
+      res.writeHead(400);
+      return res.end("Bad request");
+    }
+
+    if (p.includes("\0")) {
+      res.writeHead(400);
+      return res.end("Bad request");
+    }
 
     if (p === "/") {
       p = "/index.html";
@@ -1316,24 +1344,25 @@ async function startServer() {
     });
   });
 
+  // THE MISSING PIECE: actually start listening.
   server.listen(PORT, () => {
-    console.log(
-      `AdTech Platform running at http://localhost:${PORT}`
-    );
+    console.log(`Server running at http://localhost:${PORT}`);
+  });
 
-    console.log(
-      "Admin: admin@adtech.in / Admin@123"
-    );
-
-    console.log(
-      "Client: ads@abc.com / Client@123"
-    );
+  server.on("error", error => {
+    console.error("HTTP server error:", error.message);
+    process.exit(1);
   });
 
   /* ---------- Graceful shutdown ---------- */
 
+  let shuttingDown = false;
+
   for (const sig of ["SIGINT", "SIGTERM"]) {
     process.on(sig, async () => {
+      if (shuttingDown) return;
+      shuttingDown = true;
+
       console.log("Shutting down server...");
 
       clearTimeout(timer);
@@ -1352,6 +1381,9 @@ async function startServer() {
       server.close(() => {
         process.exit(0);
       });
+
+      // Don't hang forever on open keep-alive connections.
+      setTimeout(() => process.exit(0), 5000).unref();
     });
   }
 }
