@@ -5,15 +5,20 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+
 const supabaseStore = require("./config/supabase-store");
 
 const PORT = process.env.PORT || 3000;
 const ROOT = path.join(__dirname, "public");
 const DATA_DIR = path.join(__dirname, "data");
 const DB_FILE = path.join(DATA_DIR, "db.json");
-const DEVICE_KEY = process.env.DEVICE_KEY || "device-secret";
 
-// Database must be declared before the crypto helpers.
+if (!process.env.DEVICE_KEY) {
+  throw new Error("DEVICE_KEY is missing from environment variables");
+}
+
+const DEVICE_KEY = process.env.DEVICE_KEY;
+
 let db;
 let timer;
 

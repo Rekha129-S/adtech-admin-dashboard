@@ -48,6 +48,26 @@
   ],
   "advertisers": [
     {
+      "id": 4,
+      "pw": "a77c3c412311423bb696b95574e73e12:edbbd199087d7e61a28cd0daa4a12a263fe8530d5d8f3729c0ab7b00a20e3f2d",
+      "name": "Future Brands",
+      "email": "hello@futurebrands.com",
+      "status": "Approved",
+      "created": "2026-10-01T08:53:57.017Z",
+      "lastLogin": "2026-11-01T07:33:57.017Z",
+      "loginCount": 1
+    },
+    {
+      "id": 5,
+      "pw": "283f4c095a449b2a5a3db511f4b445e5:a8e2ba1112ee4c0f88120e0715d0412e7baf9647e9127cc747eb96245d389ea7",
+      "name": "Mega Media",
+      "email": "ads@megamedia.com",
+      "status": "Approved",
+      "created": "2026-10-03T08:53:57.017Z",
+      "lastLogin": "2026-10-31T04:53:57.017Z",
+      "loginCount": 1
+    },
+    {
       "id": 6,
       "pw": "e4a222d9fcb6d2d6820342091aa4ba75:2bd2798ba0532a328680b7270df720377477ff8eafc16f922d58c8974de54a0f",
       "name": "SR Enterprices",
@@ -84,29 +104,25 @@
       "created": "2026-09-29T08:53:57.017Z",
       "lastLogin": null,
       "loginCount": 0
-    },
-    {
-      "id": 4,
-      "pw": "a77c3c412311423bb696b95574e73e12:edbbd199087d7e61a28cd0daa4a12a263fe8530d5d8f3729c0ab7b00a20e3f2d",
-      "name": "Future Brands",
-      "email": "hello@futurebrands.com",
-      "status": "Approved",
-      "created": "2026-10-01T08:53:57.017Z",
-      "lastLogin": "2026-11-01T07:33:57.017Z",
-      "loginCount": 1
-    },
-    {
-      "id": 5,
-      "pw": "283f4c095a449b2a5a3db511f4b445e5:a8e2ba1112ee4c0f88120e0715d0412e7baf9647e9127cc747eb96245d389ea7",
-      "name": "Mega Media",
-      "email": "ads@megamedia.com",
-      "status": "Approved",
-      "created": "2026-10-03T08:53:57.017Z",
-      "lastLogin": "2026-10-31T04:53:57.017Z",
-      "loginCount": 1
     }
   ],
   "partners": [
+    {
+      "id": 3,
+      "name": "Mahesh Rao",
+      "phone": "9988776655",
+      "status": "Pending",
+      "created": "2026-09-29T08:53:57.017Z",
+      "vehicle": "KA-01-CC-3003"
+    },
+    {
+      "id": 4,
+      "name": "Lakshmi Devi",
+      "phone": "9765432109",
+      "status": "Active",
+      "created": "2026-10-01T08:53:57.017Z",
+      "vehicle": "KA-01-DD-4004"
+    },
     {
       "id": 5,
       "name": "Rajesh Gowda",
@@ -154,25 +170,25 @@
       "status": "Active",
       "created": "2026-09-27T08:53:57.017Z",
       "vehicle": "KA-01-BB-2002"
-    },
-    {
-      "id": 3,
-      "name": "Mahesh Rao",
-      "phone": "9988776655",
-      "status": "Pending",
-      "created": "2026-09-29T08:53:57.017Z",
-      "vehicle": "KA-01-CC-3003"
-    },
-    {
-      "id": 4,
-      "name": "Lakshmi Devi",
-      "phone": "9765432109",
-      "status": "Active",
-      "created": "2026-10-01T08:53:57.017Z",
-      "vehicle": "KA-01-DD-4004"
     }
   ],
   "vehicles": [
+    {
+      "id": 3,
+      "no": "KA-01-CC-3003",
+      "area": "Koramangala",
+      "owner": "Mahesh Rao",
+      "status": "Inactive",
+      "created": "2026-09-29T08:53:57.017Z"
+    },
+    {
+      "id": 4,
+      "no": "KA-01-DD-4004",
+      "area": "HSR Layout",
+      "owner": "Lakshmi Devi",
+      "status": "Active",
+      "created": "2026-10-01T08:53:57.017Z"
+    },
     {
       "id": 5,
       "no": "KA-01-EE-5005",
@@ -220,68 +236,30 @@
       "owner": "Suresh Patel",
       "status": "Active",
       "created": "2026-09-27T08:53:57.017Z"
-    },
-    {
-      "id": 3,
-      "no": "KA-01-CC-3003",
-      "area": "Koramangala",
-      "owner": "Mahesh Rao",
-      "status": "Inactive",
-      "created": "2026-09-29T08:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "no": "KA-01-DD-4004",
-      "area": "HSR Layout",
-      "owner": "Lakshmi Devi",
-      "status": "Active",
-      "created": "2026-10-01T08:53:57.017Z"
     }
   ],
   "devices": [
     {
-      "id": 7,
-      "dev": "DEV-007",
-      "lat": 12.929246172057832,
-      "lng": 77.5844357404554,
-      "speed": 15,
-      "status": "Online",
-      "created": "2026-10-07T08:53:57.017Z",
-      "vehicle": "KA-01-GG-7007",
-      "lastSeenAt": "2026-11-11T05:48:02.512Z"
-    },
-    {
-      "id": 8,
-      "dev": "DEV-008",
-      "lat": 12.845835415532793,
-      "lng": 77.65707880965131,
-      "speed": 30,
-      "status": "Online",
-      "created": "2026-10-09T08:53:57.017Z",
-      "vehicle": "KA-01-HH-8008",
-      "lastSeenAt": "2026-11-11T05:48:02.512Z"
-    },
-    {
       "id": 1,
       "dev": "DEV-001",
-      "lat": 12.904825915012621,
-      "lng": 77.62426036995154,
-      "speed": 30,
+      "lat": 12.905921069644664,
+      "lng": 77.62349009168035,
+      "speed": 15,
       "status": "Online",
       "created": "2026-09-25T08:53:57.017Z",
       "vehicle": "KA-01-AA-1001",
-      "lastSeenAt": "2026-11-11T05:48:02.512Z"
+      "lastSeenAt": "2026-11-11T09:34:33.656Z"
     },
     {
       "id": 2,
       "dev": "DEV-002",
-      "lat": 12.919326864568626,
-      "lng": 77.62338194743754,
-      "speed": 27,
+      "lat": 12.916428276005695,
+      "lng": 77.62422362797686,
+      "speed": 25,
       "status": "Online",
       "created": "2026-09-27T08:53:57.017Z",
       "vehicle": "KA-01-BB-2002",
-      "lastSeenAt": "2026-11-11T05:48:02.512Z"
+      "lastSeenAt": "2026-11-11T09:34:33.656Z"
     },
     {
       "id": 3,
@@ -297,13 +275,13 @@
     {
       "id": 4,
       "dev": "DEV-004",
-      "lat": 12.910292892023845,
-      "lng": 77.64079453263948,
-      "speed": 22,
+      "lat": 12.913449001979345,
+      "lng": 77.63858517425848,
+      "speed": 30,
       "status": "Online",
       "created": "2026-10-01T08:53:57.017Z",
       "vehicle": "KA-01-DD-4004",
-      "lastSeenAt": "2026-11-11T05:48:02.512Z"
+      "lastSeenAt": "2026-11-11T09:34:33.656Z"
     },
     {
       "id": 5,
@@ -319,16 +297,47 @@
     {
       "id": 6,
       "dev": "DEV-006",
-      "lat": 12.965869273568082,
-      "lng": 77.74865237673966,
-      "speed": 14,
+      "lat": 12.96686033583598,
+      "lng": 77.74951232871467,
+      "speed": 11,
       "status": "Online",
       "created": "2026-10-05T08:53:57.017Z",
       "vehicle": "KA-01-FF-6006",
-      "lastSeenAt": "2026-11-11T05:48:02.512Z"
+      "lastSeenAt": "2026-11-11T09:34:33.656Z"
+    },
+    {
+      "id": 7,
+      "dev": "DEV-007",
+      "lat": 12.931565811310026,
+      "lng": 77.5852778617214,
+      "speed": 18,
+      "status": "Online",
+      "created": "2026-10-07T08:53:57.017Z",
+      "vehicle": "KA-01-GG-7007",
+      "lastSeenAt": "2026-11-11T09:34:33.656Z"
+    },
+    {
+      "id": 8,
+      "dev": "DEV-008",
+      "lat": 12.84618355178171,
+      "lng": 77.65715489755664,
+      "speed": 31,
+      "status": "Online",
+      "created": "2026-10-09T08:53:57.017Z",
+      "vehicle": "KA-01-HH-8008",
+      "lastSeenAt": "2026-11-11T09:34:33.656Z"
     }
   ],
   "campaigns": [
+    {
+      "id": 4,
+      "adv": "Future Brands",
+      "end": "2026-12-15",
+      "name": "Winter Bonanza",
+      "start": "2026-11-15",
+      "status": "Rejected",
+      "created": "2026-10-01T08:53:57.017Z"
+    },
     {
       "id": 5,
       "adv": "Mega Media",
@@ -382,15 +391,6 @@
       "start": "2026-11-10",
       "status": "Approved",
       "created": "2026-09-29T08:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "adv": "Future Brands",
-      "end": "2026-12-15",
-      "name": "Winter Bonanza",
-      "start": "2026-11-15",
-      "status": "Rejected",
-      "created": "2026-10-01T08:53:57.017Z"
     }
   ],
   "inventory": [
@@ -436,26 +436,6 @@
     }
   ],
   "billing": [
-    {
-      "id": 12,
-      "adv": "ABC Enterprises",
-      "date": "2026-05-08",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 80000,
-      "status": "Paid",
-      "created": "2026-10-17T08:53:57.017Z"
-    },
-    {
-      "id": 1,
-      "adv": "ABC Enterprises",
-      "date": "2026-11-01",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 150000,
-      "status": "Paid",
-      "created": "2026-09-25T08:53:57.017Z"
-    },
     {
       "id": 2,
       "adv": "Platform",
@@ -555,6 +535,26 @@
       "amount": 110000,
       "status": "Paid",
       "created": "2026-10-15T08:53:57.017Z"
+    },
+    {
+      "id": 12,
+      "adv": "ABC Enterprises",
+      "date": "2026-05-08",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 80000,
+      "status": "Paid",
+      "created": "2026-10-17T08:53:57.017Z"
+    },
+    {
+      "id": 1,
+      "adv": "ABC Enterprises",
+      "date": "2026-11-01",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 150000,
+      "status": "Paid",
+      "created": "2026-09-25T08:53:57.017Z"
     }
   ],
   "support": [
@@ -600,6 +600,34 @@
     }
   ],
   "audit": [
+    {
+      "at": "2026-11-04T08:56:27.822Z",
+      "id": 4,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "Signed in (admin)"
+    },
+    {
+      "at": "2026-11-04T08:23:57.017Z",
+      "id": 3,
+      "ip": "127.0.0.1",
+      "user": "System",
+      "action": "System initialised"
+    },
+    {
+      "at": "2026-11-04T08:33:57.017Z",
+      "id": 2,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "Signed in (admin)"
+    },
+    {
+      "at": "2026-11-04T08:43:57.017Z",
+      "id": 1,
+      "ip": "127.0.0.1",
+      "user": "Amit Sharma",
+      "action": "campaigns: approved \"Festive Offers 2026\""
+    },
     {
       "at": "2026-11-10T12:30:15.024Z",
       "id": 11,
@@ -648,34 +676,6 @@
       "ip": "127.0.0.1",
       "user": "Rekha Patil",
       "action": "campaigns: updated \"Tech Sale\""
-    },
-    {
-      "at": "2026-11-04T08:56:27.822Z",
-      "id": 4,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "Signed in (admin)"
-    },
-    {
-      "at": "2026-11-04T08:23:57.017Z",
-      "id": 3,
-      "ip": "127.0.0.1",
-      "user": "System",
-      "action": "System initialised"
-    },
-    {
-      "at": "2026-11-04T08:33:57.017Z",
-      "id": 2,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "Signed in (admin)"
-    },
-    {
-      "at": "2026-11-04T08:43:57.017Z",
-      "id": 1,
-      "ip": "127.0.0.1",
-      "user": "Amit Sharma",
-      "action": "campaigns: approved \"Festive Offers 2026\""
     }
   ],
   "logins": [

@@ -1,4 +1,3 @@
-
 const supabase = require('./supabase');
 
 const COLLECTIONS = {
@@ -20,7 +19,7 @@ async function readTable(table) {
         .from(table)
         .select('id, payload');
 
-    if (error) throw error;
+    if (error) throw new Error(`${table}: ${error.message}`);
 
     return (data || []).map(row => row.payload);
 }
@@ -41,7 +40,9 @@ async function loadDatabase() {
         settings.find(item => item.id === 'meta')?.value || {};
 
     const hasData = Object.values(COLLECTIONS)
-        .some((table, index) => db[Object.keys(COLLECTIONS)[index]].length > 0);
+        .some((table, index) =>
+            db[Object.keys(COLLECTIONS)[index]].length > 0
+        );
 
     return hasData ? db : null;
 }
@@ -51,12 +52,18 @@ async function saveTable(table, records) {
         .from(table)
         .select('id');
 
-    if (readError) throw readError;
+    if (readError) throw new Error(`${table}: ${readError.message}`);
 
-    const rows = records.map(record => ({
-        id: String(record.id),
-        payload: record
-    }));
+    const rows = records.map(record => {
+        if (record.id === undefined || record.id === null) {
+            throw new Error(`A record in ${table} is missing its id`);
+        }
+
+        return {
+            id: String(record.id),
+            payload: record
+        };
+    });
 
     const currentIds = rows.map(row => row.id);
     const oldIds = (existing || []).map(row => row.id);
@@ -68,15 +75,15 @@ async function saveTable(table, records) {
             .delete()
             .in('id', deletedIds);
 
-        if (error) throw error;
+        if (error) throw new Error(`${table}: ${error.message}`);
     }
 
     if (rows.length > 0) {
         const { error } = await supabase
             .from(table)
-            .upsert(rows);
+            .upsert(rows, { onConflict: 'id' });
 
-        if (error) throw error;
+        if (error) throw new Error(`${table}: ${error.message}`);
     }
 }
 
@@ -86,20 +93,18 @@ async function saveDatabase(db) {
     }
 
     const settingsRows = [
-        { id: 'settings', value: db.settings },
-        { id: 'meta', value: db.meta }
-    ];
-
-    const rows = settingsRows.map(item => ({
+        { id: 'settings', value: db.settings || {} },
+        { id: 'meta', value: db.meta || {} }
+    ].map(item => ({
         id: item.id,
         payload: item
     }));
 
     const { error } = await supabase
         .from('app_settings')
-        .upsert(rows);
+        .upsert(settingsRows, { onConflict: 'id' });
 
-    if (error) throw error;
+    if (error) throw new Error(`app_settings: ${error.message}`);
 
     console.log('Database saved to Supabase successfully');
 }

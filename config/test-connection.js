@@ -1,17 +1,22 @@
-
 const supabase = require('./supabase');
 
 async function testConnection() {
-    const { data, error } = await supabase
-        .from('advertisers')
-        .select('*')
-        .limit(1);
+    try {
+        const { data, error } = await supabase
+            .from('advertisers')
+            .select('id')
+            .limit(1);
 
-    if (error) {
-        console.error('Connection failed:', error.message);
-    } else {
+        if (error) {
+            throw error;
+        }
+
         console.log('Supabase connection successful!');
-        console.log('Data:', data);
+        console.log('Advertisers test result:', data);
+
+    } catch (error) {
+        console.error('Supabase connection failed:', error.message);
+        process.exitCode = 1;
     }
 }
 

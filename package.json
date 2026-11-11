@@ -2,16 +2,15 @@
   "name": "adtech-admin-platform",
   "version": "3.0.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "echo Build completed"
+    "start": "node server.js"
   },
   "engines": {
-    "node": ">=22"
+    "node": "22.x"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.119.0",
+    "@supabase/supabase-js": "^2.57.4",
     "dotenv": "^18.0.10"
   }
 }
