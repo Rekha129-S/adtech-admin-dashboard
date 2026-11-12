@@ -1,24 +1,17 @@
 "use strict";
 
-// Vercel serverless function
-const core = require("./lib/core");
+// Vercel serverless function. vercel.json sends every /api/* request here.
+const core = require("../lib/core");
 
 module.exports = async (req, res) => {
   try {
-    if (!core.handler) {
-      return res.status(500).json({
-        success: false,
-        message: "API handler is missing"
-      });
-    }
-
-    return core.handler(req, res);
+    return await core.handler(req, res);
   } catch (error) {
     console.error("API Error:", error);
 
-    return res.status(500).json({
-      success: false,
-      message: "Internal server error"
-    });
+    if (!res.headersSent) {
+      res.writeHead(500, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ error: "Internal server error" }));
+    }
   }
 };
