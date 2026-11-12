@@ -1,2 +1,6 @@
-.vercel
+node_modules
 .env
+.env.local
+.vercel
+data/db.json
+data/db.json.tmp

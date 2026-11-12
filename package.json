@@ -1,18 +1,19 @@
 {
-  "name": "adtech-admin-platform",
-  "version": "3.0.0",
+  "name": "adtech-admin-dashboard",
+  "version": "1.0.0",
   "private": true,
+  "description": "AdTech Admin Dashboard",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
     "start": "node server.js",
-    "build": "echo Build completed"
+    "dev": "node server.js",
+    "check": "node --check lib/core.js && node --check api/index.js && node --check server.js"
   },
   "engines": {
-    "node": "22.x"
+    "node": "20.x"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.57.4",
-    "dotenv": "^18.0.10"
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
   }
 }
