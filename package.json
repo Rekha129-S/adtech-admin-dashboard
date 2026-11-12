@@ -10,7 +10,7 @@
     "check": "node --check lib/core.js && node --check api/index.js && node --check server.js"
   },
   "engines": {
-    "node": "20.x"
+    "node": "26.x"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",

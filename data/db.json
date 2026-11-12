@@ -437,6 +437,56 @@
   ],
   "billing": [
     {
+      "id": 8,
+      "adv": "ABC Enterprises",
+      "date": "2026-09-02",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 140000,
+      "status": "Paid",
+      "created": "2026-10-09T08:53:57.017Z"
+    },
+    {
+      "id": 9,
+      "adv": "TechGlobal Ltd",
+      "date": "2026-08-15",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 120000,
+      "status": "Paid",
+      "created": "2026-10-11T08:53:57.017Z"
+    },
+    {
+      "id": 10,
+      "adv": "Dream Ads Co.",
+      "date": "2026-07-20",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 90000,
+      "status": "Paid",
+      "created": "2026-10-13T08:53:57.017Z"
+    },
+    {
+      "id": 11,
+      "adv": "Mega Media",
+      "date": "2026-06-10",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 110000,
+      "status": "Paid",
+      "created": "2026-10-15T08:53:57.017Z"
+    },
+    {
+      "id": 12,
+      "adv": "ABC Enterprises",
+      "date": "2026-05-08",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 80000,
+      "status": "Paid",
+      "created": "2026-10-17T08:53:57.017Z"
+    },
+    {
       "id": 1,
       "adv": "ABC Enterprises",
       "date": "2026-11-01",
@@ -505,56 +555,6 @@
       "amount": 160000,
       "status": "Paid",
       "created": "2026-10-07T08:53:57.017Z"
-    },
-    {
-      "id": 8,
-      "adv": "ABC Enterprises",
-      "date": "2026-09-02",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 140000,
-      "status": "Paid",
-      "created": "2026-10-09T08:53:57.017Z"
-    },
-    {
-      "id": 9,
-      "adv": "TechGlobal Ltd",
-      "date": "2026-08-15",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 120000,
-      "status": "Paid",
-      "created": "2026-10-11T08:53:57.017Z"
-    },
-    {
-      "id": 10,
-      "adv": "Dream Ads Co.",
-      "date": "2026-07-20",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 90000,
-      "status": "Paid",
-      "created": "2026-10-13T08:53:57.017Z"
-    },
-    {
-      "id": 11,
-      "adv": "Mega Media",
-      "date": "2026-06-10",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 110000,
-      "status": "Paid",
-      "created": "2026-10-15T08:53:57.017Z"
-    },
-    {
-      "id": 12,
-      "adv": "ABC Enterprises",
-      "date": "2026-05-08",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 80000,
-      "status": "Paid",
-      "created": "2026-10-17T08:53:57.017Z"
     }
   ],
   "support": [
