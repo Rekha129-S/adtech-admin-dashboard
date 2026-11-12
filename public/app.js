@@ -1,4 +1,7 @@
 "use strict";
+
+if (typeof document !== "undefined") {
+
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const PAGE = 8, TK = "adtech-token";
@@ -416,5 +419,11 @@ addEventListener("resize", fit); fit();
 (async () => {
   if (!token) return;
   $("#landing").style.display = "none";
-  try { await enter(); } catch (e) { logout(); }
+  try {
+    await enter();
+  } catch (e) {
+    logout();
+  }
 })();
+
+}
