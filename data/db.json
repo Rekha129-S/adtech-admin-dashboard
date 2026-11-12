@@ -48,6 +48,24 @@
   ],
   "advertisers": [
     {
+      "id": 6,
+      "pw": "e4a222d9fcb6d2d6820342091aa4ba75:2bd2798ba0532a328680b7270df720377477ff8eafc16f922d58c8974de54a0f",
+      "name": "SR Enterprices",
+      "email": "sr2413@gmail.com",
+      "status": "Pending",
+      "created": "2026-11-04T08:58:55.084Z"
+    },
+    {
+      "id": 1,
+      "pw": "f7c8718257c822fe1f46c872d94efdc9:d9801a7ff52872a98f197ff88dacca0cea76a40bf50b46e62b2e4977565169b6",
+      "name": "ABC Enterprises",
+      "email": "ads@abc.com",
+      "status": "Approved",
+      "created": "2026-09-25T08:53:57.017Z",
+      "lastLogin": "2026-11-04T03:53:57.017Z",
+      "loginCount": 2
+    },
+    {
       "id": 2,
       "pw": "e35e680a5602c5dd50d8f00f06f9348e:510520596d499d4b7c52ee150caeca4ee9634575f0b60515d0f854f7393bde9d",
       "name": "TechGlobal Ltd",
@@ -86,27 +104,25 @@
       "created": "2026-10-03T08:53:57.017Z",
       "lastLogin": "2026-10-31T04:53:57.017Z",
       "loginCount": 1
-    },
-    {
-      "id": 6,
-      "pw": "e4a222d9fcb6d2d6820342091aa4ba75:2bd2798ba0532a328680b7270df720377477ff8eafc16f922d58c8974de54a0f",
-      "name": "SR Enterprices",
-      "email": "sr2413@gmail.com",
-      "status": "Pending",
-      "created": "2026-11-04T08:58:55.084Z"
-    },
-    {
-      "id": 1,
-      "pw": "f7c8718257c822fe1f46c872d94efdc9:d9801a7ff52872a98f197ff88dacca0cea76a40bf50b46e62b2e4977565169b6",
-      "name": "ABC Enterprises",
-      "email": "ads@abc.com",
-      "status": "Approved",
-      "created": "2026-09-25T08:53:57.017Z",
-      "lastLogin": "2026-11-04T03:53:57.017Z",
-      "loginCount": 2
     }
   ],
   "partners": [
+    {
+      "id": 7,
+      "name": "Divya Nair",
+      "phone": "9901234567",
+      "status": "Active",
+      "created": "2026-10-07T08:53:57.017Z",
+      "vehicle": "KA-01-GG-7007"
+    },
+    {
+      "id": 8,
+      "name": "Kiran Reddy",
+      "phone": "9886543210",
+      "status": "Active",
+      "created": "2026-10-09T08:53:57.017Z",
+      "vehicle": "KA-01-HH-8008"
+    },
     {
       "id": 1,
       "name": "Ramesh Kumar",
@@ -154,25 +170,25 @@
       "status": "Active",
       "created": "2026-10-05T08:53:57.017Z",
       "vehicle": "KA-01-FF-6006"
-    },
-    {
-      "id": 7,
-      "name": "Divya Nair",
-      "phone": "9901234567",
-      "status": "Active",
-      "created": "2026-10-07T08:53:57.017Z",
-      "vehicle": "KA-01-GG-7007"
-    },
-    {
-      "id": 8,
-      "name": "Kiran Reddy",
-      "phone": "9886543210",
-      "status": "Active",
-      "created": "2026-10-09T08:53:57.017Z",
-      "vehicle": "KA-01-HH-8008"
     }
   ],
   "vehicles": [
+    {
+      "id": 7,
+      "no": "KA-01-GG-7007",
+      "area": "Jayanagar",
+      "owner": "Divya Nair",
+      "status": "Active",
+      "created": "2026-10-07T08:53:57.017Z"
+    },
+    {
+      "id": 8,
+      "no": "KA-01-HH-8008",
+      "area": "Electronic City",
+      "owner": "Kiran Reddy",
+      "status": "Active",
+      "created": "2026-10-09T08:53:57.017Z"
+    },
     {
       "id": 1,
       "no": "KA-01-AA-1001",
@@ -220,47 +236,9 @@
       "owner": "Anil Shetty",
       "status": "Active",
       "created": "2026-10-05T08:53:57.017Z"
-    },
-    {
-      "id": 7,
-      "no": "KA-01-GG-7007",
-      "area": "Jayanagar",
-      "owner": "Divya Nair",
-      "status": "Active",
-      "created": "2026-10-07T08:53:57.017Z"
-    },
-    {
-      "id": 8,
-      "no": "KA-01-HH-8008",
-      "area": "Electronic City",
-      "owner": "Kiran Reddy",
-      "status": "Active",
-      "created": "2026-10-09T08:53:57.017Z"
     }
   ],
   "devices": [
-    {
-      "id": 1,
-      "dev": "DEV-001",
-      "lat": 12.907049570260282,
-      "lng": 77.62456442208651,
-      "speed": 11,
-      "status": "Online",
-      "created": "2026-09-25T08:53:57.017Z",
-      "vehicle": "KA-01-AA-1001",
-      "lastSeenAt": "2026-11-11T17:04:04.277Z"
-    },
-    {
-      "id": 2,
-      "dev": "DEV-002",
-      "lat": 12.918873926171305,
-      "lng": 77.62297040081752,
-      "speed": 24,
-      "status": "Online",
-      "created": "2026-09-27T08:53:57.017Z",
-      "vehicle": "KA-01-BB-2002",
-      "lastSeenAt": "2026-11-11T17:04:04.277Z"
-    },
     {
       "id": 3,
       "dev": "DEV-003",
@@ -326,9 +304,40 @@
       "created": "2026-10-09T08:53:57.017Z",
       "vehicle": "KA-01-HH-8008",
       "lastSeenAt": "2026-11-11T17:04:04.277Z"
+    },
+    {
+      "id": 1,
+      "dev": "DEV-001",
+      "lat": 12.907049570260282,
+      "lng": 77.62456442208651,
+      "speed": 11,
+      "status": "Online",
+      "created": "2026-09-25T08:53:57.017Z",
+      "vehicle": "KA-01-AA-1001",
+      "lastSeenAt": "2026-11-11T17:04:04.277Z"
+    },
+    {
+      "id": 2,
+      "dev": "DEV-002",
+      "lat": 12.918873926171305,
+      "lng": 77.62297040081752,
+      "speed": 24,
+      "status": "Online",
+      "created": "2026-09-27T08:53:57.017Z",
+      "vehicle": "KA-01-BB-2002",
+      "lastSeenAt": "2026-11-11T17:04:04.277Z"
     }
   ],
   "campaigns": [
+    {
+      "id": 2,
+      "adv": "TechGlobal Ltd",
+      "end": "2026-11-20",
+      "name": "Tech Sale",
+      "start": "2026-11-05",
+      "status": "Approved",
+      "created": "2026-09-27T08:53:57.017Z"
+    },
     {
       "id": 3,
       "adv": "Dream Ads Co.",
@@ -382,15 +391,6 @@
       "start": "2026-11-01",
       "status": "Approved",
       "created": "2026-09-25T08:53:57.017Z"
-    },
-    {
-      "id": 2,
-      "adv": "TechGlobal Ltd",
-      "end": "2026-11-20",
-      "name": "Tech Sale",
-      "start": "2026-11-05",
-      "status": "Approved",
-      "created": "2026-09-27T08:53:57.017Z"
     }
   ],
   "inventory": [
@@ -436,6 +436,56 @@
     }
   ],
   "billing": [
+    {
+      "id": 3,
+      "adv": "TechGlobal Ltd",
+      "date": "2026-10-25",
+      "desc": "Campaign payment",
+      "type": "Invoices",
+      "amount": 200000,
+      "status": "Pending",
+      "created": "2026-09-29T08:53:57.017Z"
+    },
+    {
+      "id": 4,
+      "adv": "Platform",
+      "date": "2026-10-20",
+      "desc": "Device fees",
+      "type": "Transactions",
+      "amount": 50000,
+      "status": "Paid",
+      "created": "2026-10-01T08:53:57.017Z"
+    },
+    {
+      "id": 5,
+      "adv": "Platform",
+      "date": "2026-10-18",
+      "desc": "Partner commission",
+      "type": "Payouts",
+      "amount": 40000,
+      "status": "Paid",
+      "created": "2026-10-03T08:53:57.017Z"
+    },
+    {
+      "id": 6,
+      "adv": "Mega Media",
+      "date": "2026-10-05",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 180000,
+      "status": "Paid",
+      "created": "2026-10-05T08:53:57.017Z"
+    },
+    {
+      "id": 7,
+      "adv": "Future Brands",
+      "date": "2026-09-12",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 160000,
+      "status": "Paid",
+      "created": "2026-10-07T08:53:57.017Z"
+    },
     {
       "id": 8,
       "adv": "ABC Enterprises",
@@ -505,59 +555,17 @@
       "amount": 75000,
       "status": "Paid",
       "created": "2026-09-27T08:53:57.017Z"
-    },
-    {
-      "id": 3,
-      "adv": "TechGlobal Ltd",
-      "date": "2026-10-25",
-      "desc": "Campaign payment",
-      "type": "Invoices",
-      "amount": 200000,
-      "status": "Pending",
-      "created": "2026-09-29T08:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "adv": "Platform",
-      "date": "2026-10-20",
-      "desc": "Device fees",
-      "type": "Transactions",
-      "amount": 50000,
-      "status": "Paid",
-      "created": "2026-10-01T08:53:57.017Z"
-    },
-    {
-      "id": 5,
-      "adv": "Platform",
-      "date": "2026-10-18",
-      "desc": "Partner commission",
-      "type": "Payouts",
-      "amount": 40000,
-      "status": "Paid",
-      "created": "2026-10-03T08:53:57.017Z"
-    },
-    {
-      "id": 6,
-      "adv": "Mega Media",
-      "date": "2026-10-05",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 180000,
-      "status": "Paid",
-      "created": "2026-10-05T08:53:57.017Z"
-    },
-    {
-      "id": 7,
-      "adv": "Future Brands",
-      "date": "2026-09-12",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 160000,
-      "status": "Paid",
-      "created": "2026-10-07T08:53:57.017Z"
     }
   ],
   "support": [
+    {
+      "id": 2,
+      "prio": "Medium",
+      "subj": "Campaign not playing",
+      "user": "TechGlobal Ltd",
+      "status": "In progress",
+      "created": "2026-09-27T08:53:57.017Z"
+    },
     {
       "id": 3,
       "prio": "Low",
@@ -589,31 +597,9 @@
       "user": "ABC Enterprises",
       "status": "Open",
       "created": "2026-09-25T08:53:57.017Z"
-    },
-    {
-      "id": 2,
-      "prio": "Medium",
-      "subj": "Campaign not playing",
-      "user": "TechGlobal Ltd",
-      "status": "In progress",
-      "created": "2026-09-27T08:53:57.017Z"
     }
   ],
   "audit": [
-    {
-      "at": "2026-11-04T08:23:57.017Z",
-      "id": 3,
-      "ip": "127.0.0.1",
-      "user": "System",
-      "action": "System initialised"
-    },
-    {
-      "at": "2026-11-04T08:33:57.017Z",
-      "id": 2,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "Signed in (admin)"
-    },
     {
       "at": "2026-11-04T08:43:57.017Z",
       "id": 1,
@@ -690,9 +676,31 @@
       "ip": "127.0.0.1",
       "user": "Rekha Patil",
       "action": "Signed in (admin)"
+    },
+    {
+      "at": "2026-11-04T08:23:57.017Z",
+      "id": 3,
+      "ip": "127.0.0.1",
+      "user": "System",
+      "action": "System initialised"
+    },
+    {
+      "at": "2026-11-04T08:33:57.017Z",
+      "id": 2,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "Signed in (admin)"
     }
   ],
   "logins": [
+    {
+      "at": "2026-11-02T08:33:57.017Z",
+      "id": 3,
+      "ip": "127.0.0.1",
+      "name": "ABC Enterprises",
+      "advId": 1,
+      "email": "ads@abc.com"
+    },
     {
       "at": "2026-11-01T07:33:57.017Z",
       "id": 2,
@@ -724,14 +732,6 @@
       "name": "TechGlobal Ltd",
       "advId": 2,
       "email": "ads@techglobal.com"
-    },
-    {
-      "at": "2026-11-02T08:33:57.017Z",
-      "id": 3,
-      "ip": "127.0.0.1",
-      "name": "ABC Enterprises",
-      "advId": 1,
-      "email": "ads@abc.com"
     }
   ],
   "settings": {
