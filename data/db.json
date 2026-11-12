@@ -48,24 +48,6 @@
   ],
   "advertisers": [
     {
-      "id": 6,
-      "pw": "e4a222d9fcb6d2d6820342091aa4ba75:2bd2798ba0532a328680b7270df720377477ff8eafc16f922d58c8974de54a0f",
-      "name": "SR Enterprices",
-      "email": "sr2413@gmail.com",
-      "status": "Pending",
-      "created": "2026-11-04T08:58:55.084Z"
-    },
-    {
-      "id": 1,
-      "pw": "f7c8718257c822fe1f46c872d94efdc9:d9801a7ff52872a98f197ff88dacca0cea76a40bf50b46e62b2e4977565169b6",
-      "name": "ABC Enterprises",
-      "email": "ads@abc.com",
-      "status": "Approved",
-      "created": "2026-09-25T08:53:57.017Z",
-      "lastLogin": "2026-11-04T03:53:57.017Z",
-      "loginCount": 2
-    },
-    {
       "id": 2,
       "pw": "e35e680a5602c5dd50d8f00f06f9348e:510520596d499d4b7c52ee150caeca4ee9634575f0b60515d0f854f7393bde9d",
       "name": "TechGlobal Ltd",
@@ -104,9 +86,43 @@
       "created": "2026-10-03T08:53:57.017Z",
       "lastLogin": "2026-10-31T04:53:57.017Z",
       "loginCount": 1
+    },
+    {
+      "id": 6,
+      "pw": "e4a222d9fcb6d2d6820342091aa4ba75:2bd2798ba0532a328680b7270df720377477ff8eafc16f922d58c8974de54a0f",
+      "name": "SR Enterprices",
+      "email": "sr2413@gmail.com",
+      "status": "Pending",
+      "created": "2026-11-04T08:58:55.084Z"
+    },
+    {
+      "id": 1,
+      "pw": "f7c8718257c822fe1f46c872d94efdc9:d9801a7ff52872a98f197ff88dacca0cea76a40bf50b46e62b2e4977565169b6",
+      "name": "ABC Enterprises",
+      "email": "ads@abc.com",
+      "status": "Approved",
+      "created": "2026-09-25T08:53:57.017Z",
+      "lastLogin": "2026-11-04T03:53:57.017Z",
+      "loginCount": 2
     }
   ],
   "partners": [
+    {
+      "id": 5,
+      "name": "Rajesh Gowda",
+      "phone": "8899887654",
+      "status": "Active",
+      "created": "2026-10-03T08:53:57.017Z",
+      "vehicle": "KA-01-EE-5005"
+    },
+    {
+      "id": 6,
+      "name": "Anil Shetty",
+      "phone": "9845012345",
+      "status": "Active",
+      "created": "2026-10-05T08:53:57.017Z",
+      "vehicle": "KA-01-FF-6006"
+    },
     {
       "id": 7,
       "name": "Divya Nair",
@@ -154,25 +170,25 @@
       "status": "Active",
       "created": "2026-10-01T08:53:57.017Z",
       "vehicle": "KA-01-DD-4004"
-    },
-    {
-      "id": 5,
-      "name": "Rajesh Gowda",
-      "phone": "8899887654",
-      "status": "Active",
-      "created": "2026-10-03T08:53:57.017Z",
-      "vehicle": "KA-01-EE-5005"
-    },
-    {
-      "id": 6,
-      "name": "Anil Shetty",
-      "phone": "9845012345",
-      "status": "Active",
-      "created": "2026-10-05T08:53:57.017Z",
-      "vehicle": "KA-01-FF-6006"
     }
   ],
   "vehicles": [
+    {
+      "id": 5,
+      "no": "KA-01-EE-5005",
+      "area": "Indiranagar",
+      "owner": "Rajesh Gowda",
+      "status": "Active",
+      "created": "2026-10-03T08:53:57.017Z"
+    },
+    {
+      "id": 6,
+      "no": "KA-01-FF-6006",
+      "area": "Whitefield",
+      "owner": "Anil Shetty",
+      "status": "Active",
+      "created": "2026-10-05T08:53:57.017Z"
+    },
     {
       "id": 7,
       "no": "KA-01-GG-7007",
@@ -220,69 +236,9 @@
       "owner": "Lakshmi Devi",
       "status": "Active",
       "created": "2026-10-01T08:53:57.017Z"
-    },
-    {
-      "id": 5,
-      "no": "KA-01-EE-5005",
-      "area": "Indiranagar",
-      "owner": "Rajesh Gowda",
-      "status": "Active",
-      "created": "2026-10-03T08:53:57.017Z"
-    },
-    {
-      "id": 6,
-      "no": "KA-01-FF-6006",
-      "area": "Whitefield",
-      "owner": "Anil Shetty",
-      "status": "Active",
-      "created": "2026-10-05T08:53:57.017Z"
     }
   ],
   "devices": [
-    {
-      "id": 3,
-      "dev": "DEV-003",
-      "lat": 12.938225506655423,
-      "lng": 77.62690305980257,
-      "speed": 0,
-      "status": "Offline",
-      "created": "2026-09-29T08:53:57.017Z",
-      "vehicle": "KA-01-CC-3003",
-      "lastSeenAt": "2026-11-04T07:53:57.017Z"
-    },
-    {
-      "id": 4,
-      "dev": "DEV-004",
-      "lat": 12.914219755136282,
-      "lng": 77.64050079610384,
-      "speed": 22,
-      "status": "Online",
-      "created": "2026-10-01T08:53:57.017Z",
-      "vehicle": "KA-01-DD-4004",
-      "lastSeenAt": "2026-11-11T17:04:04.277Z"
-    },
-    {
-      "id": 5,
-      "dev": "DEV-005",
-      "lat": 12.977069674869483,
-      "lng": 77.6448321381954,
-      "speed": 0,
-      "status": "Maintenance",
-      "created": "2026-10-03T08:53:57.017Z",
-      "vehicle": "KA-01-EE-5005",
-      "lastSeenAt": "2026-11-04T08:43:57.017Z"
-    },
-    {
-      "id": 6,
-      "dev": "DEV-006",
-      "lat": 12.967333827386618,
-      "lng": 77.7485628716092,
-      "speed": 30,
-      "status": "Online",
-      "created": "2026-10-05T08:53:57.017Z",
-      "vehicle": "KA-01-FF-6006",
-      "lastSeenAt": "2026-11-11T17:04:04.277Z"
-    },
     {
       "id": 7,
       "dev": "DEV-007",
@@ -326,9 +282,62 @@
       "created": "2026-09-27T08:53:57.017Z",
       "vehicle": "KA-01-BB-2002",
       "lastSeenAt": "2026-11-11T17:04:04.277Z"
+    },
+    {
+      "id": 3,
+      "dev": "DEV-003",
+      "lat": 12.938225506655423,
+      "lng": 77.62690305980257,
+      "speed": 0,
+      "status": "Offline",
+      "created": "2026-09-29T08:53:57.017Z",
+      "vehicle": "KA-01-CC-3003",
+      "lastSeenAt": "2026-11-04T07:53:57.017Z"
+    },
+    {
+      "id": 4,
+      "dev": "DEV-004",
+      "lat": 12.914219755136282,
+      "lng": 77.64050079610384,
+      "speed": 22,
+      "status": "Online",
+      "created": "2026-10-01T08:53:57.017Z",
+      "vehicle": "KA-01-DD-4004",
+      "lastSeenAt": "2026-11-11T17:04:04.277Z"
+    },
+    {
+      "id": 5,
+      "dev": "DEV-005",
+      "lat": 12.977069674869483,
+      "lng": 77.6448321381954,
+      "speed": 0,
+      "status": "Maintenance",
+      "created": "2026-10-03T08:53:57.017Z",
+      "vehicle": "KA-01-EE-5005",
+      "lastSeenAt": "2026-11-04T08:43:57.017Z"
+    },
+    {
+      "id": 6,
+      "dev": "DEV-006",
+      "lat": 12.967333827386618,
+      "lng": 77.7485628716092,
+      "speed": 30,
+      "status": "Online",
+      "created": "2026-10-05T08:53:57.017Z",
+      "vehicle": "KA-01-FF-6006",
+      "lastSeenAt": "2026-11-11T17:04:04.277Z"
     }
   ],
   "campaigns": [
+    {
+      "id": 1,
+      "adv": "ABC Enterprises",
+      "end": "2026-11-30",
+      "name": "Festive Offers 2026",
+      "start": "2026-11-01",
+      "status": "Approved",
+      "created": "2026-09-25T08:53:57.017Z"
+    },
     {
       "id": 2,
       "adv": "TechGlobal Ltd",
@@ -382,15 +391,6 @@
       "start": "2026-11-05",
       "status": "Pending",
       "created": "2026-11-04T09:01:32.691Z"
-    },
-    {
-      "id": 1,
-      "adv": "ABC Enterprises",
-      "end": "2026-11-30",
-      "name": "Festive Offers 2026",
-      "start": "2026-11-01",
-      "status": "Approved",
-      "created": "2026-09-25T08:53:57.017Z"
     }
   ],
   "inventory": [
@@ -436,6 +436,36 @@
     }
   ],
   "billing": [
+    {
+      "id": 7,
+      "adv": "Future Brands",
+      "date": "2026-09-12",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 160000,
+      "status": "Paid",
+      "created": "2026-10-07T08:53:57.017Z"
+    },
+    {
+      "id": 8,
+      "adv": "ABC Enterprises",
+      "date": "2026-09-02",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 140000,
+      "status": "Paid",
+      "created": "2026-10-09T08:53:57.017Z"
+    },
+    {
+      "id": 9,
+      "adv": "TechGlobal Ltd",
+      "date": "2026-08-15",
+      "desc": "Campaign revenue",
+      "type": "Transactions",
+      "amount": 120000,
+      "status": "Paid",
+      "created": "2026-10-11T08:53:57.017Z"
+    },
     {
       "id": 10,
       "adv": "Dream Ads Co.",
@@ -525,36 +555,6 @@
       "amount": 180000,
       "status": "Paid",
       "created": "2026-10-05T08:53:57.017Z"
-    },
-    {
-      "id": 7,
-      "adv": "Future Brands",
-      "date": "2026-09-12",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 160000,
-      "status": "Paid",
-      "created": "2026-10-07T08:53:57.017Z"
-    },
-    {
-      "id": 8,
-      "adv": "ABC Enterprises",
-      "date": "2026-09-02",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 140000,
-      "status": "Paid",
-      "created": "2026-10-09T08:53:57.017Z"
-    },
-    {
-      "id": 9,
-      "adv": "TechGlobal Ltd",
-      "date": "2026-08-15",
-      "desc": "Campaign revenue",
-      "type": "Transactions",
-      "amount": 120000,
-      "status": "Paid",
-      "created": "2026-10-11T08:53:57.017Z"
     }
   ],
   "support": [
@@ -600,20 +600,6 @@
     }
   ],
   "audit": [
-    {
-      "at": "2026-11-04T08:43:57.017Z",
-      "id": 1,
-      "ip": "127.0.0.1",
-      "user": "Amit Sharma",
-      "action": "campaigns: approved \"Festive Offers 2026\""
-    },
-    {
-      "at": "2026-11-11T17:03:49.775Z",
-      "id": 12,
-      "ip": "127.0.0.1",
-      "user": "Rekha Patil",
-      "action": "Signed in (admin)"
-    },
     {
       "at": "2026-11-10T12:30:15.024Z",
       "id": 11,
@@ -687,6 +673,27 @@
     {
       "at": "2026-11-04T08:33:57.017Z",
       "id": 2,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "Signed in (admin)"
+    },
+    {
+      "at": "2026-11-04T08:43:57.017Z",
+      "id": 1,
+      "ip": "127.0.0.1",
+      "user": "Amit Sharma",
+      "action": "campaigns: approved \"Festive Offers 2026\""
+    },
+    {
+      "at": "2026-11-11T17:03:49.775Z",
+      "id": 12,
+      "ip": "127.0.0.1",
+      "user": "Rekha Patil",
+      "action": "Signed in (admin)"
+    },
+    {
+      "at": "2026-11-12T06:44:08.025Z",
+      "id": 14,
       "ip": "127.0.0.1",
       "user": "Rekha Patil",
       "action": "Signed in (admin)"
